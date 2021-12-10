@@ -1,0 +1,107 @@
+
+<h1 class="my-3 text-light text-center">Atualizar Produto</h1>
+
+<div class="card shadow"><!--STARt ALL-->
+  <form class="m-3">
+    <div class="row">
+      <div class="col md-12">
+        <div class="from-group">
+          <label for="nome">Nome do Produto: </label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite o nome do Produto"
+            name = "nomeProduto"
+            [(ngModel)]="produto.nome"
+          >
+        </div>
+      </div>
+    </div> <!--END row nome-->
+
+
+    <div class="row mt-2"><!--START row Validade Produto-->
+
+      <div class="col md-6">
+        <div class="from-group">
+          <label for="nome">Validade do Produto: </label>
+          <input
+            type="date"
+            class="form-control"
+            name="validade"
+            [(ngModel)]="produto.dataPromocao"
+          >
+        </div>
+      </div>
+
+
+
+      <div class="col md-6"><!--START row Preço Produto-->
+        <div class="from-group">
+          <label for="nome">Preço do Produto: </label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="0.00"
+            min="0"
+            name="preco"
+            [(ngModel)]="produto.precoProduto"
+          >
+        </div>
+      </div><!--END row Preço Produto-->
+    </div><!--END row Validade Produto-->
+
+    <div class="row mt-2">
+
+      <div class="col md-6">
+        <div class="from-group">
+          <label for="qtdade">Quantidade: </label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Digite a quantidade"
+            name = "qtdade"
+            [(ngModel)]="produto.qtdade"
+          >
+        </div>
+      </div>
+    </div> <!--END row qtdade-->
+
+
+
+
+    <br>
+    <br>
+
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-default mt-4" routerLink="/produtos">Voltar</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-success float-right mt-4" (click)="salvarProduto()">Salvar</button>
+      </div>
+    </div>
+
+
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand text-light" href="#"><strong>Hardware Edu</strong></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-light zoom" href="/">Página Inicial<span class="sr-only"></span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-danger zoom" routerLink="index-black"> <strong>BlackFridayNatal</strong> <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown ml-2 text-light">
+        <div class="dropdown text-light">
+          <button class="btn btn-white dropdown-toggle text-light zoom" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            Produtos
+          </button>
+          <div class="dropdown-menu text-light bg-dark" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item text-light bg-secondary zoom" href="/produtos">Listar Produtos</a>
+            <a class="dropdown-item text-light bg-secondary zoom" href="/produtos/cadastrar">Cadastrar Produtos</a>
+          </div>
+        </div>
+      </li>
+
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0 mr-2">
+      <button class="btn btn-outline-danger neon-red my-2 my-sm-0 zoom" aria-hidden="true" routerLink="carrinho"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+    </form>
+    <form class="form-inline my-2 my-lg-0 mr-2">
+      <button class="btn btn-outline-danger neon-red my-2 my-sm-0 zoom" type="submit"><i class="fa fa-user-circle" aria-hidden="true"></i></button>
+    </form>
+    <form class="form-inline my-2 my-lg-0">
+      <button type="button" class="btn btn-outline-danger neon-red zoom" id="liveToastBtn" routerLink="/">Sair</button>
+    </form>
+  </div>
+</nav>
+
+<style>
+  .zoom{
+    overflow: hidden;
+  }
+  .zoom{
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: translate(10%,10%);
+  }
+  .zoom:hover{
+    -moz-transform: scale(1.25,1.25);
+    -webkit-transform: scale(1.25,1.25);
+    transform: scale(1.1);
+  }
+
+  .neon-red{
+    overflow: hidden;
+  }
+  .neon-red{
+    cursor: pointer;
+  }
+  .neon-red:hover{
+    box-shadow: 0 0 15px #ff0000;
+  }
+</style>

@@ -1,0 +1,105 @@
+<h1 class="my-3 text-light">  <!--MY e MT são classes de espaçamentos do bootstrap-->
+  <strong>PRODUTOS DA LOJA</strong>
+  <button routerLink="/produtos/cadastrar" class="btn btn-success mt-2 float-right zoom neon-green">
+    Cadastrar Produto
+  </button>
+</h1>
+
+<div class="card shadow">
+  <table class="table table-responsive table-striped">
+    <thead><!---->
+      <tr><!--linha-->
+        <th>#</th><!--Colunas-->
+        <th>Nome</th>
+        <th>Validade Promoção</th>
+        <th>Valor</th>
+        <th>Quantidade</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let prod of ListaProdutos">
+        <td>{{prod.id}}</td>
+        <td>{{prod.nome}}</td>
+        <td>{{prod.dataPromocao | date: "shortDate"}}</td>
+        <td>{{prod.precoProduto | currency: 'BRL'}}</td>
+        <td>{{prod.qtdade}}</td>
+        <td>
+          <button class="btn btn-warning zoom neon-yellow" routerLink="/produtos/atualizar/{{prod.id}}">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </button>
+
+          <button class="btn btn-danger ml-2 zoom neon-red" [swal]="{
+            title: 'ATENÇÃO',
+            text: 'Deseja realmente excluir o produto: ' + prod.nome + '?',
+            showDenyButton: true,
+            denyButtonText: 'Não',
+            confirmButtonText: 'Sim, excluir',
+            icon: 'warning'
+          }"
+           (confirm)='deletar(prod)'>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </button>
+
+
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+<br>
+<br>
+
+<style>
+  .zoom{
+    overflow: hidden;
+  }
+
+  .zoom{
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: translate(10%,10%);
+  }
+
+  .zoom:hover{
+    -moz-transform: scale(1.25,1.25);
+    -webkit-transform: scale(1.25,1.25);
+    transform: scale(1.1);
+  }
+
+
+
+  .neon-yellow{
+    overflow: hidden;
+  }
+  .neon-yellow{
+    cursor: pointer;
+  }
+  .neon-yellow:hover{
+    box-shadow: 0 0 15px #fffb00;
+  }
+
+
+  .neon-red{
+    overflow: hidden;
+  }
+  .neon-red{
+    cursor: pointer;
+  }
+  .neon-red:hover{
+    box-shadow: 0 0 15px #ff0000;
+  }
+
+
+  .neon-green{
+    overflow: hidden;
+  }
+  .neon-green{
+    cursor: pointer;
+  }
+  .neon-green:hover{
+    box-shadow: 0 0 10px #02fd38;
+  }
+</style>

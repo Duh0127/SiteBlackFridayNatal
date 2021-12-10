@@ -1,0 +1,176 @@
+<u class="text-white"><h1 class="text-danger text-center my-3"><strong>PRODUTOS DA LOJA</strong></h1></u>
+<br>
+
+  <div class="row">
+    <div class="col"></div>
+      <div class="col mx-auto text-center">
+        <div class="card" style="width: 40rem;">
+          <img src="https://dcomercio.com.br/public/upload/antigas/black-friday.png" routerLink="index-black" class="card-img-top" alt="BlackFridayNatal">
+          <div class="card-body bg-dark">
+            <h5 class="card-title">  </h5>
+            <p class="card-text text-white"><strong>Clique no botão para conferir nossas promoções</strong></p>
+            <a routerLink="index-black" class="btn bg-white text-danger zoom img-responsive neon-red"><strong><h1>Black Friday Natal</h1></strong></a>
+          </div>
+        </div>
+      </div>
+    <div class="col"></div>
+  </div>
+
+
+<hr class="bg-white">
+<hr class="bg-secondary">
+<hr class="bg-dark">
+<br>
+
+
+
+<div class="row">
+
+  <div class="col zoom img-responsive">
+    <!-- copiou o seletor do card-produto.ts -->
+    <app-card-produto
+      [foto]="foto"
+      [nomeProduto]="nomeProduto"
+      [promocao]="promocao"
+      [idProduto]="idProduto"
+      [dataPromocao]="dataPromocao"
+      [precoProduto]="precoProduto">
+    </app-card-produto>
+  </div>
+
+  <div class="col zoom img-responsive"><!--MEMORIA RAM DDR5-->
+    <app-card-produto
+      foto="https://www.showmetech.com.br/wp-content/uploads//2021/11/capa-ddr5-1920x1024.jpg"
+      nomeProduto="Memoria RAM DDR5"
+      [promocao]="promocao"
+      [idProduto]="2"
+      dataPromocao="2021-12-25"
+      [precoProduto]="1400.00" >
+    </app-card-produto>
+  </div>
+
+  <div class="col zoom img-responsive"><!--MONITOR GAMER-->
+    <app-card-produto
+      foto="https://www.manualdacompra.com.br/files/images/49/tela-do-gigabyte-g27f.jpg"
+      nomeProduto="Monitor Gamer 240Hz 0.5ms Gigabyte"
+      [promocao]="promocao"
+      [idProduto]="3"
+      dataPromocao="2021-11-20"
+      [precoProduto]="2300.00" >
+    </app-card-produto>
+  </div>
+
+
+  <div class="row mt-5"> <!--row 2-->
+
+    <div class="col ml-3 mr-3 zoom img-responsive"><!--mouse gamer-->
+      <app-card-produto
+        foto="https://www.guiadopc.com.br/wp-content/uploads/2020/01/sharkoon-1.png"
+        nomeProduto="Mouse Gamer Sharkoon Light²200"
+        [promocao]="promocao"
+        [idProduto]="9"
+        dataPromocao="2021-12-23"
+        [precoProduto]="200.00" >
+      </app-card-produto>
+    </div>
+
+    <div class="col ml-4 mr-3 zoom img-responsive"><!--teclado gamer-->
+      <app-card-produto
+        foto="https://www.hardware.com.br/filters:format:(png)/@/static/20161209/ds-2.png"
+        nomeProduto="Teclado Gamer HyperX Alloy FPS"
+        [promocao]="promocao"
+        [idProduto]="6"
+        dataPromocao="2021-12-22"
+        [precoProduto]="450.00" >
+      </app-card-produto>
+    </div>
+
+    <div class="col ml-3 zoom img-responsive"><!--webcam c920-->
+      <app-card-produto
+        foto="https://m.media-amazon.com/images/S/aplus-media/vc/453af38f-448f-4405-a647-f560e9b2b73c.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        nomeProduto="Webcam C920s FullHD"
+        [promocao]="promocao"
+        [idProduto]="1"
+        dataPromocao="2021-12-22"
+        [precoProduto]="425.00" >
+      </app-card-produto>
+    </div>
+  </div>
+
+
+
+
+  <div class="row mt-5"> <!--row 3-->
+
+    <div class="col ml-3 mr-3 zoom img-responsive"><!--Microfone-->
+      <app-card-produto
+        foto="https://s2.glbimg.com/j3TiIfwu6NO2jBXh6v6TTDNj6EI=/0x0:900x600/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/t/K/ZAyzzBTBSxUscXFBxU8w/quadcast-s.jpg"
+        nomeProduto="Microfone QuadCast S HyperX"
+        [promocao]="promocao"
+        [idProduto]="5"
+        dataPromocao="2021-12-23"
+        [precoProduto]="1300.00" >
+      </app-card-produto>
+    </div>
+
+    <div class="col ml-4 mr-3 zoom img-responsive"><!--Astro A50-->
+      <app-card-produto
+        foto="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2019/10/astro-promo.jpg"
+        nomeProduto="HeadSet Gamer Astro A50"
+        [promocao]="promocao"
+        [idProduto]="7"
+        dataPromocao="2021-12-22"
+        [precoProduto]="1750.00" >
+      </app-card-produto>
+    </div>
+
+    <div class="col ml-3 zoom img-responsive"><!--Suporte Headset-->
+      <app-card-produto
+        foto="https://cdn.combatinfo.com.br/media/400/XMGAB9OKBOPDnom.jpg"
+        nomeProduto="Suporte HeadSet Redragon"
+        [promocao]="promocao"
+        [idProduto]="10"
+        dataPromocao="2021-12-22"
+        [precoProduto]="89.90" >
+      </app-card-produto>
+    </div>
+  </div>
+
+
+</div><!--fim ROW principal-->
+
+<style>
+  .zoom{
+    overflow: hidden;
+  }
+  .zoom{
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: translate(10%,10%);
+  }
+  .zoom:hover{
+    -moz-transform: scale(1.25,1.25);
+    -webkit-transform: scale(1.25,1.25);
+    transform: scale(1.1);
+  }
+
+
+  .neon-red{
+    overflow: hidden;
+  }
+  .neon-red{
+    background: transparent;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    cursor: pointer;
+  }
+  .neon-red:hover{
+    box-shadow: 0 0 40px #ff0000;
+  }
+
+</style>
+
+<br>
+<br>
+<br>

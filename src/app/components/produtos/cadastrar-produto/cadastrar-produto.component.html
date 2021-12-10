@@ -1,0 +1,144 @@
+<ul class="text-secondary"><h1 class="mt-3 text-light text-center">Cadastrar Produto</h1></ul>
+
+<div class="card shadow"><!--STARt ALL-->
+  <form class="m-3">
+    <div class="row">
+      <div class="col md-12">
+        <div class="from-group">
+          <label for="nome">Nome do Produto: </label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite o nome do Produto"
+            name = "nomeProduto"
+            [(ngModel)]="produto.nome"
+          >
+        </div>
+      </div>
+    </div> <!--END row nome-->
+
+
+    <div class="row mt-2"><!--START row Validade Produto-->
+
+      <div class="col md-6">
+        <div class="from-group">
+          <label for="nome">Validade da Promoção: </label>
+          <input
+            type="date"
+            class="form-control"
+            name="validade"
+            [(ngModel)]="produto.dataPromocao"
+          >
+        </div>
+      </div>
+
+
+      <div class="col md-6"><!--START row Preço Produto-->
+        <div class="from-group">
+          <label for="nome">Preço do Produto: </label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="0.00"
+            min="0"
+            name="preco"
+            [(ngModel)]="produto.precoProduto"
+          >
+        </div>
+      </div><!--END row Preço Produto-->
+
+    </div><!--END row Validade Produto-->
+
+    <div class="row mt-2">
+
+      <div class="col md-6">
+        <div class="from-group">
+          <label for="qtdade">Quantidade: </label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Digite a quantidade"
+            name = "qtdade"
+            [(ngModel)]="produto.qtdade"
+          >
+        </div>
+      </div>
+    </div> <!--END row qtdade-->
+
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-dark mt-4 zoom neon-gray" routerLink="/produtos"> ← Voltar</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-success mt-3 float-right zoom neon-green" (click)="salvarProduto()">Salvar</button>
+      </div><!--Fim col button salvar-->
+    </div>
+
+
+  </form>
+</div>
+
+
+<style>
+  .zoom{
+    overflow: hidden;
+  }
+
+  .zoom{
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: translate(10%,10%);
+  }
+
+  .zoom:hover{
+    -moz-transform: scale(1.25,1.25);
+    -webkit-transform: scale(1.25,1.25);
+    transform: scale(1.1);
+  }
+
+
+  .neon-green{
+    overflow: hidden;
+  }
+  .neon-green{
+    cursor: pointer;
+  }
+  .neon-green:hover{
+    box-shadow: 0 0 10px #02fd38;
+  }
+
+
+  .neon-gray{
+    overflow: hidden;
+  }
+  .neon-gray{
+    cursor: pointer;
+  }
+  .neon-gray:hover{
+    box-shadow: 0 0 10px #353535;
+  }
+</style>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+

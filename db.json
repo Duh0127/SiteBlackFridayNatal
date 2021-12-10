@@ -1,0 +1,81 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Webcam Logitech C920s",
+      "dataPromocao": "2021-12-31",
+      "precoProduto": 425,
+      "qtdade": 300
+    },
+    {
+      "nome": "SSD NVME Samsung 970 evo plus 2TB",
+      "dataPromocao": "2021-12-30",
+      "precoProduto": 1700,
+      "id": 2,
+      "qtdade": 8
+    },
+    {
+      "nome": "Memoria RAM DDR5 5400Mhz - 8GB",
+      "dataPromocao": "2021-12-31",
+      "precoProduto": 1400,
+      "id": 3,
+      "qtdade": 3
+    },
+    {
+      "nome": "Monitor Gamer 240Hz 0.5ms Gigabyte",
+      "dataPromocao": "2021-12-28",
+      "precoProduto": 2300,
+      "id": 4,
+      "qtdade": 6
+    },
+    {
+      "nome": "Microfone Condensador HyperX QuadCast S",
+      "dataPromocao": "2021-12-29",
+      "precoProduto": 1300,
+      "id": 5,
+      "qtdade": 160
+    },
+    {
+      "nome": "Teclado Gamer HyperX Alloy FPS Switch Blue",
+      "dataPromocao": "2021-12-15",
+      "precoProduto": 450,
+      "id": 6,
+      "qtdade": 47
+    },
+    {
+      "nome": "Headset Gamer Bluetooth/Wireless Astro A50",
+      "dataPromocao": "2021-12-14",
+      "precoProduto": 1750,
+      "id": 7,
+      "qtdade": 39
+    },
+    {
+      "nome": "Caixa de Som 40W RMS Conexão USB - Edifier",
+      "dataPromocao": "2021-12-30",
+      "precoProduto": 680,
+      "id": 8,
+      "qtdade": 79
+    },
+    {
+      "nome": "Mouse Gamer Sharkoon Light²200 UltraLeve",
+      "dataPromocao": "2021-12-16",
+      "precoProduto": 200,
+      "id": 9,
+      "qtdade": 62
+    },
+    {
+      "nome": "Suporte de Headset - Redragon",
+      "dataPromocao": "2021-12-24",
+      "precoProduto": 89.9,
+      "qtdade": "74",
+      "id": 10
+    },
+    {
+      "nome": "Cabo USB-C 3 metros - PowerLight ",
+      "dataPromocao": "2021-12-22",
+      "precoProduto": 21.59,
+      "qtdade": "40",
+      "id": 11
+    }
+  ]
+}
